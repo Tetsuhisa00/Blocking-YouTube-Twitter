@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "BlockingSite",
+  "version": "1.0",
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
+
