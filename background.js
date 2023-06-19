@@ -2,18 +2,17 @@
 // ブロックするサイトのURLを指定してください
 const blockedSites = ["twitter.com", "youtube.com"];
 
-// タブの更新を監視するイベントリスナーを登録します
+// タブの更新を監視するイベントリスナーを登録する
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  // タブが更新された場合、新しいURLを取得します
+  // タブが更新された場合、新しいURLを取得する
   const url = changeInfo.url || tab.url;
   
-  // ブロックリストにURLが含まれているかをチェックします
+  // ブロックリストにURLが含まれているかチェックする
   if (blockedSites.some(site => url.includes(site))) {
-    // ブロックされたページにアクセスしようとした場合の処理をここに記述します
-    // 例えば、アクセスを遮断するか、エラーページを表示するなどの処理を行います
-    // この例では、指定したURLへのアクセスを許可します
-    if (url !== "https://github.com/Tetsuhisa00") {
-      chrome.tabs.update(tabId, { url: "https://github.com/Tetsuhisa00" });
+    // ブロックされたページにアクセスしようとした場合の処理
+    // chromeのホーム画面(新規タブページのこと)に戻る
+    if (url !== "chrome://newtab/") {
+      chrome.tabs.update(tabId, { url: "chrome://newtab/" });
     }
   }
 });
