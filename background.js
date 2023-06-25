@@ -1,6 +1,6 @@
 
 //　ブロックするサイトはYouTubeとTwitterに設定
-const blockedSites = ["twitter.com", "youtube.com"];
+const blockedSites = ["youtube.com", "twitter.com"];
 
 // タブの更新を監視するイベントリスナーを登録
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
