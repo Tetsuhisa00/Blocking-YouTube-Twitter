@@ -17,6 +17,6 @@ This Chrome extension allows you to block specific websites from being accessed.
 
 
 ## Feedback and Contribution
-Any feedback or contribution to this project is welcomed and appreciated. Please feel free to create an issue or pull request for any bugs, feature requests or improvements you have in mind. I will do my best to respond to all issues in a timely manner.
+Any feedback or contribution to this project is welcomed and appreciated. Please feel free to send your message to [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfklRaq0_2wE8yU6iiRWVy9gJHy_vhvwVKyDOAx6HADBzcTPA/viewform?usp=sf_link) create an issue or pull request for any bugs, feature requests or improvements you have in mind. I will do my best to respond to all issues in a timely manner.
 
 
