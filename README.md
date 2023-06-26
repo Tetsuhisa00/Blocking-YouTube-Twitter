@@ -3,6 +3,8 @@ This is a repository of the customized BlockingSite working on YouTube and Twitt
 
 This Chrome extension aims to improve user productivity by blocking access to distracting websites. Currently, it is pre-configured to block YouTube and Twitter, two of the most time-consuming social media platforms.
 
+![This is the icon of this Blocking-YouTube-Twitter Chrome extension.](/icons/icon128.png)
+
 
 ## Description
 
