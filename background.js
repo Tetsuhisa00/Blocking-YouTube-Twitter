@@ -4,10 +4,9 @@ const blockedSites = ["youtube.com", "twitter.com"];
 
 // 開いている全てのタブをチェックしてブロックリストにあるURLが含まれているかを確認する
 // 含まれている場合は、タブを閉じる
-chrome.tabs.query({}, function(tabs)  {
-  for (var i = 0; i < tabs.length; i++) {
-    var tab = tabs[i];
-    if (blockedSites.some(site => tab.url.includes(site))) {
+chrome.tab.query({}, (tabs) => {
+  for (let tab of tabs) {
+    if (blockkSites.some(site => tab.url.includes(site))) {
       chrome.tabs.remove(tab.id);
     }
   }
